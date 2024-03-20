@@ -1,0 +1,116 @@
+/*
+  tbl.css
+ some css for tbl.js 
+
+*/
+:root {
+    --allwide: 100%;
+    --tabula-height: 100%;
+    --botton-margin: 100px;
+    --footer-height: 30px;
+    --clip-margin: 18px;
+    --tbl-max-height: 0.65;
+    --tbl-height: 0.5;
+    --tbl-max-width: 0.995;
+    --tbl-max-inner-tbl: 99.5%;
+    --hd-color: #5E6E82
+} 
+
+/******************************************************************************************************************
+basic style 'tblr' 
+*******************************************************************************************************************/
+.tblr {
+    position: relative;
+    width: calc(var(--tbl-max-width) * 100vw);
+    height: 80%;
+    left: 3px;
+    border: 0.25px solid #dee2e66e;
+    clear: both;
+    overflow-x: hidden;
+    /*background-color: bisque;*/
+}
+
+.tblr table {
+    border-collapse: collapse;
+    display: block;
+    position: relative;
+}
+
+.tblr thead th {
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+    background-color: #291802;
+
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    color: limegreen;
+
+    min-width: 2%;
+   
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+}
+
+.tblr table tbody tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+
+    background-color: white;
+    vertical-align: top
+}
+
+.tblr table tr:nth-child(even) {
+    background-color: #e0edee50
+}
+
+.tblr table tr td {
+    font-size: 0.875em;/*
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;*/
+
+    padding: 5px 5px 5px 5px;
+    border-bottom: 0.25px solid rgba(0, 0, 255, 0.10);
+    border-right: 0.25px solid rgba(0, 0, 0, 0.05);
+    border-left: 0.25px solid rgba(0, 0, 0, 0.15);
+
+    min-width: 2%;    
+}
+
+.tblr table tr:hover {
+    background-color: #b2a8eb8a !important;
+    border-bottom: #007bffa2 1px solid;
+    border-top: #007bffa2 1px solid;
+}
+
+.tblr table tfoot tr td:hover {
+    opacity: 0.8;
+    background-color: #eeeeee
+}
+
+.rowselected {
+    background-color: #f0fa6b79 !important;
+    border-top: 2px solid #3e88136b;
+    border-bottom: 1.75px solid #88fa05;
+}
+
+.tblr table tr:nth-child(odd) td.sorted {
+    background-color: #d0e8e93d;
+}
+
+.tblr table tr:nth-child(even) td.sorted {
+    background-color: #d2e1a769;
+}
+
+.tblr .tools {
+    background-color: whitesmoke;
+}
+
+
