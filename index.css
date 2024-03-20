@@ -1,0 +1,36 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.wrapper {
+    width:  80%;
+    height: 80%;
+
+    float: left;
+    border: 1px rgba(0, 0, 0, 20%) solid;
+
+    background-color:snow;
+}
+
+.details {
+    width: 80%;
+    height: 100px;
+    /*    float: right;*/
+    clear: both;
+    border: 1px rgba(0, 0, 0, 10%) solid;
+
+    background-color: whitesmoke;    
+}
+
+.content {
+    clear: both;
+    width: 100%;
+
+    background-color:silver;
+}
+
+#tabula{
+    width: 99%;
+    height: 85%;
+}
