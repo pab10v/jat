@@ -7,12 +7,15 @@ this class allows to use data in json format to create a table with
 ## Why?
 <br>
 I spent hours looking for a javascript without dependencies (neither jquery nor any other) to use in a small project, however, when my search was fruitless I rushed to make this small class in Javascript to
-1- manage the data load (still pending),
-2- the search,
-3- sort by columns and
-4- stretch the width of the columns.
 <br>
-I publish this test version, while I use it and repair any bugs that appear along the way
+<br>
+<b>1</b>- manage the data load (still pending),<br>
+<b>2</b>- the search,<br>
+<b>3</b>- sort by columns and <br>
+<b>4</b>- stretch the width of the columns.<br>
+<br>
+<br>
+(now) I publish this test version, while I use it and repair any bugs that appear along the way
 <br>
 
 ## How to
