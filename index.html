@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>JSGrid test fase</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" id="favicon">
+
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="tbl.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <p>JS Grid</p>
+    <div>Just Another Javascript table manipulator for web apps</div>
+    <p></p>
+    <div id="content" class="content"></div>
+
+    <div id="wrapper" class="wrapper">
+        <div id="tabula"></div>
+    </div> <!-- wrapper -->
+
+    <div id="details" class="details"> </div>
+
+
+    <script src="tbl.min.js"></script>
+    <script src="data.sample.js"></script>
+</body>
+
+</html>
+<script>
+
+    function getDetails(data) {
+        let rowDetail = document.getElementById('details');
+        rowDetail.innerHTML = JSON.stringify(data);
+
+    }
+
+    options = {
+        colIndex: 'project_id',
+        onRowSelected: getDetails,
+    };
+
+    var tbl = new jsgrid(document.getElementById("tabula"),
+        { 'rows': dataset.rows, 'headers': headers }, options
+    );
+
+
+</script>
